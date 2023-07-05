@@ -6,13 +6,13 @@
 # contrib!
 # Create by marcio@ambientelivre.com.br marcos@ambientelivre.com.br
 
-# Configs do Script
-DESTDIR=/home/ambientelivre/backup    	             # diretório de destino do backup
-DATE_NOW=$(date +%d-%m-%y)                           # padrão do nome do arquivo com data
-INSTALL_ALFRESCO=/opt/alfresco                	     # diretório de instalacao do alfresco
-DIR_ALFDATA=/opt/alfresco/data/alf-repo-data         # diretório de dados (alfdata) alfresco
-DBENGINE=mariadb				     # Exemplo: mariadb or postgres
-INDEXBACKUP=false                                    # Configura backup do Solr: true or false
+# Configs of Script
+DESTDIR=/home/ambientelivre/backup    	             # backup destination directory
+DATE_NOW=$(date +%d-%m-%y)                           # default filename with date
+INSTALL_ALFRESCO=/opt/alfresco                	     # directory where alfresco is installed 
+DIR_ALFDATA=/opt/alfresco/data/alf-repo-data         # alfresco data directory (alf-data)
+DBENGINE=mariadb				     # Examples: mariadb or postgres
+INDEXBACKUP=false                                    # Set Solr Backup: true or false
 
 ## Configs Database PostgreSQL
 PGUSER=alfresco

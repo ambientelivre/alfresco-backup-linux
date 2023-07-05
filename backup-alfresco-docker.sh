@@ -31,10 +31,10 @@ DBDATABASE=alfresco
 mkdir $DESTDIR/$DATE_NOW
 cd $INSTALL_ALFRESCO
 
-if [ $DBENGINE == "mariadb" ]
+if [ $DBENGINE = "mariadb" ]
 then
   docker-compose exec mariadb mysqldump -u$DBUSER -p$DBPASS $DBDATABASE > $DESTDIR/$DATE_NOW/$DBDATABASE'_'$DBENGINE.sql
-elif [ $DBENGINE == "postgres" ]
+elif [ $DBENGINE = "postgres" ]
 then
   docker-compose exec postgres pg_dump --username $PGUSER $PGDATABASE > $DESTDIR/$DATE_NOW/postgresql.sql
 fi
@@ -47,7 +47,7 @@ tar -pczvf $DESTDIR/$DATE_NOW/alfresco.module.tar.gz $INSTALL_ALFRESCO/alfresco
 tar -pczvf $DESTDIR/$DATE_NOW/share.module.tar.gz    $INSTALL_ALFRESCO/share
 cp $INSTALL_ALFRESCO/docker-compose.yml  $DESTDIR/$DATE_NOW/
 
-if [ $INDEXBACKUP == "true" ]
+if [ $INDEXBACKUP = "true" ]
 then
   tar -pczvf $DESTDIR/$DATE_NOW/solr.tar.gz $INSTALL_ALFRESCO/data/solr-data
 fi

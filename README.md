@@ -22,7 +22,7 @@ For alfresco 7.x and 25.x family in Docker.
 Support to Transfer S3 Bucket 
 ** requiriments ** instal mc client 
 
-## Tested cloud providers
+## Tested Cloud providers
 Magalu Cloud
 
 ## Tested onpremise

@@ -12,5 +12,5 @@ For alfresco 6.x family in Tomcat.
 
 ## script-backup-alfresco-docker.sh
 
-For alfresco 7.x family in Docker/Tomcat.
+For alfresco 7.x and 25.x family in Docker.
 

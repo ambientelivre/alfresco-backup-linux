@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="100%" height="100%" fill="#000000" />
+  <g>
+    <!-- Backup Icon -->
+    <circle cx="100" cy="120" r="60" fill="none" stroke="#00FF00" stroke-width="20" />
+    <path d="M 70 150 L 100 180 L 130 150" fill="none" stroke="#00FF00" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Linux Tux Penguin Shape (simplified) -->
+    <path d="M280 100 C250 60, 350 60, 320 100 C340 140, 340 220, 300 240 C260 220, 260 140, 280 100 Z"
+          fill="#00FF00" stroke="#00FF00" stroke-width="4"/>
+
+    <!-- Box Icon -->
+    <rect x="330" y="190" width="100" height="70" fill="#00FF00" stroke="#000000" stroke-width="4"/>
+    <path d="M330 190 L380 160 L480 160 L430 190 Z" fill="#00FF00" stroke="#000000" stroke-width="4"/>
+    <path d="M430 190 L480 160 L480 230 L430 260 Z" fill="#00FF00" stroke="#000000" stroke-width="4"/>
+
+    <!-- Project Name Text -->
+    <text x="50" y="400" font-family="monospace" font-size="40" fill="#00FF00">
+      alfresco-
+    </text>
+    <text x="50" y="450" font-family="monospace" font-size="40" fill="#00FF00">
+      backup-linux
+    </text>
+  </g>
+</svg>

@@ -22,8 +22,15 @@ For alfresco 7.x and 25.x family in Docker.
 Support to Transfer S3 Bucket 
 ** requiriments ** instal mc client 
 
-## Tested Cloud providers
-Magalu Cloud
+### ✅ Tested Environments
 
-## Tested onpremise
-Minio RELEASE.2025-04-08T15-41-24Z
+#### ☁️ Cloud Providers
+- **Magalu Cloud Object Storage** (S3-compatible)
+
+#### 🏠 On-Premise
+- **MinIO** `RELEASE.2025-04-08T15-41-24Z`
+
+> This script has been tested with the above S3-compatible environments.  
+> Make sure to properly configure the endpoint URL, access key, and secret key for your storage provider.
+
+

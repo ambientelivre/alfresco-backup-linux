@@ -1,5 +1,5 @@
 # alfresco-backup-linux
-<img src="img/alfresco-backup-linux.png" alt="alfresco-backup-linux logo" width="450"/>
+<img src="img/alfresco-backup-linux.png" alt="alfresco-backup-linux logo" align="center"  width="450"/>
 
 Alfresco backup Linux Script.
 

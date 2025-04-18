@@ -1,5 +1,9 @@
 # alfresco-backup-linux
 ![alfresco-backup-linux logo](img/alfresco-backup-linux.png)
+
+<img src="img/alfresco-backup-linux.png" alt="alfresco-backup-linux logo" width="150"/>
+
+
 Alfresco backup Linux Script.
 
 The project is open source in https://github.com/ambientelivre/alfresco-backup-linux

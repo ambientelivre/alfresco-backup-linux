@@ -19,3 +19,11 @@ For alfresco 6.x family in Tomcat.
 
 For alfresco 7.x and 25.x family in Docker.
 
+Support to Transfer S3 Bucket 
+** requiriments ** instal mc client 
+
+## Tested cloud providers
+Magalu Cloud
+
+## Tested onpremise
+Minio RELEASE.2025-04-08T15-41-24Z

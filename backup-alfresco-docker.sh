@@ -60,5 +60,5 @@ fi
 
 if [ $MINIO_S3_MOVE = "true" ]
 then
-  mc mv $DESTDIR/$DATE_NOW/*  $MINIO_S3_ALIAS/$MINIO_S3_BUCKET --recursive
+  mc mv $DESTDIR/$DATE_NOW/*  $MINIO_S3_ALIAS/$MINIO_S3_BUCKET/$DATA_NOW --recursive
 fi

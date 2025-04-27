@@ -23,15 +23,11 @@ MINIO_S3_ALIAS=magalu                                # Alias set in mc client
 ## Configs Database PostgreSQL
 PGUSER=alfresco
 PGPASSWORD=sejalivre
-PGHOST=localhost
-#PGPORT=5432
 PGDATABASE=alfresco
 
 ## Configs Database MariaDB.
 DBUSER=alfresco
 DBPASS=alfresco
-DBHOST=localhost
-#DBPORT=3306
 DBDATABASE=alfresco
 
 mkdir $DESTDIR/$DATE_NOW

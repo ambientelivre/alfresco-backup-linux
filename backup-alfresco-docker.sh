@@ -39,10 +39,10 @@ cd $INSTALL_ALFRESCO
 
 if [ $DBENGINE = "mariadb" ]
 then
-  docker-compose exec mariadb mysqldump -u$DBUSER -p$DBPASS $DBDATABASE > $DESTDIR/$DATE_NOW/$DBDATABASE'_'$DBENGINE.sql
+  docker-compose -T exec mariadb mysqldump -u$DBUSER -p$DBPASS $DBDATABASE > $DESTDIR/$DATE_NOW/$DBDATABASE'_'$DBENGINE.sql
 elif [ $DBENGINE = "postgres" ]
 then
-  docker-compose exec postgres pg_dump --username $PGUSER $PGDATABASE > $DESTDIR/$DATE_NOW/postgresql.sql
+  docker-compose -T exec postgres pg_dump --username $PGUSER $PGDATABASE > $DESTDIR/$DATE_NOW/postgresql.sql
 fi
 
 # content
@@ -60,5 +60,5 @@ fi
 
 if [ $MINIO_S3_MOVE = "true" ]
 then
-  mc mv $DESTDIR/$DATE_NOW/*  $MINIO_S3_ALIAS/$MINIO_S3_BUCKET/$DATA_NOW --recursive
+  /usr/local/bin/mc mv $DESTDIR/$DATE_NOW/*  $MINIO_S3_ALIAS/$MINIO_S3_BUCKET/$DATA_NOW --recursive
 fi

@@ -19,10 +19,14 @@ PGHOST=localhost
 PGPORT=5432
 PGDATABASE=alfresco
 
+# Carrega variáveis do .env
+if [ -f .env ]; then
+    export $(grep -v '^#' .env | xargs)
+fi
+
 mkdir $DESTDIR/$DATE_NOW
 
 pg_dump --host $PGHOST --port $PGPORT --username $PGUSER --format tar --file $DESTDIR/$DATE_NOW/postgresql.backup $PGDATABASE
 
 tar -pczvf $DESTDIR/$DATE_NOW/alfdata.tar.gz $DIR_ALFDATA
 tar -pczvf $DESTDIR/$DATE_NOW/swalfresco.tar.gz $INSTALL_ALFRESCO --exclude=$DIR_ALFDATA/.*
-

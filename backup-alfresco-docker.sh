@@ -32,7 +32,7 @@ DBDATABASE=alfresco
 
 ## Certificados e Nginx Config
 NGINX_BACKUP=false
-NGINX_CONFIG_DIR="${INSTALL_ALFRESCO}/nginx/conf.d"
+NGINX_CONFIG_DIR="${INSTALL_ALFRESCO}/config"
 CERTIFICATES_BACKUP=false
 CERTIFICATES_DIR="${INSTALL_ALFRESCO}/letsencrypt/live"
 

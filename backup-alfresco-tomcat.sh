@@ -26,6 +26,8 @@ fi
 
 mkdir $DESTDIR/$DATE_NOW
 
+[ -f "$INSTALL_ALFRESCO/.env" ] && cp "$INSTALL_ALFRESCO/.env" "$DESTDIR/$DATE_NOW/"
+
 pg_dump --host $PGHOST --port $PGPORT --username $PGUSER --format tar --file $DESTDIR/$DATE_NOW/postgresql.backup $PGDATABASE
 
 tar -pczvf $DESTDIR/$DATE_NOW/alfdata.tar.gz $DIR_ALFDATA

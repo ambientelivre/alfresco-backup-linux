@@ -45,6 +45,9 @@ DATE_NOW=$(date +%d-%m-%y)
 mkdir -p "$DESTDIR/$DATE_NOW"
 cd "$INSTALL_ALFRESCO" || exit 1
 
+cp "$INSTALL_ALFRESCO/docker-compose.yml" "$DESTDIR/$DATE_NOW/"
+[ -f "$INSTALL_ALFRESCO/.env" ] && cp "$INSTALL_ALFRESCO/.env" "$DESTDIR/$DATE_NOW/"
+
 # Backup Database
 if [ "$DBENGINE" = "mariadb" ]; then
     docker-compose exec -T mariadb mysqldump -u"$DBUSER" -p"$DBPASS" "$DBDATABASE" > "$DESTDIR/$DATE_NOW/${DBDATABASE}_${DBENGINE}.sql"

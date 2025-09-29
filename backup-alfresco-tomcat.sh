@@ -19,11 +19,6 @@ PGHOST=localhost
 PGPORT=5432
 PGDATABASE=alfresco
 
-# Carrega variáveis do .env
-if [ -f .env ]; then
-    export $(grep -v '^#' .env | xargs)
-fi
-
 mkdir $DESTDIR/$DATE_NOW
 
 [ -f "$INSTALL_ALFRESCO/.env" ] && cp "$INSTALL_ALFRESCO/.env" "$DESTDIR/$DATE_NOW/"

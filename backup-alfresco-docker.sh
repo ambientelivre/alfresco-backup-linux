@@ -36,11 +36,6 @@ NGINX_CONFIG_DIR="${INSTALL_ALFRESCO}/config"
 CERTIFICATES_BACKUP=false
 CERTIFICATES_DIR="${INSTALL_ALFRESCO}/letsencrypt/live"
 
-# Carrega variáveis do .env
-if [ -f .env ]; then
-    export $(grep -v '^#' .env | xargs)
-fi
-
 DATE_NOW=$(date +%d-%m-%y)
 mkdir -p "$DESTDIR/$DATE_NOW"
 cd "$INSTALL_ALFRESCO" || exit 1

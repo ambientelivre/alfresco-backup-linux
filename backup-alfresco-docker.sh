@@ -7,7 +7,7 @@
 # Create by marcio@ambientelivre.com.br marcos@ambientelivre.com.br
 
 # Configs of Script
-DESTDIR="/home/$(whoami)/backup"      	             # backup destination directory
+DESTDIR="/opt/backup"      	                         # backup destination directory
 DATE_NOW=$(date +%d-%m-%y)                           # default filename with date
 INSTALL_ALFRESCO=/opt/alfresco                	     # directory where alfresco is installed 
 DIR_ALFDATA="${INSTALL_ALFRESCO}/data/alf-repo-data" # alfresco data directory (alf-data)
@@ -32,7 +32,7 @@ DBDATABASE=alfresco
 
 ## Certificados e Nginx Config
 NGINX_BACKUP=false
-NGINX_CONFIG_DIR="${INSTALL_ALFRESCO}/nginx/conf.d"
+NGINX_CONFIG_DIR="${INSTALL_ALFRESCO}/config"
 CERTIFICATES_BACKUP=false
 CERTIFICATES_DIR="${INSTALL_ALFRESCO}/letsencrypt/live"
 

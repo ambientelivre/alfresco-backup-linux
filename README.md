@@ -10,11 +10,6 @@ The project is open source in https://github.com/ambientelivre/alfresco-backup-l
 
 A Backup Script for Alfresco by @ambientelivre
 
-## script-backup-alfresco.sh 
-
-For alfresco 6.x family in Tomcat.
-
-
 ## script-backup-alfresco-docker.sh
 
 For alfresco 7.x and 25.x family in Docker.
@@ -32,5 +27,9 @@ Support to Transfer S3 Bucket
 
 > This script has been tested with the above S3-compatible environments.  
 > Make sure to properly configure the endpoint URL, access key, and secret key for your storage provider.
+
+## script-backup-alfresco.sh 
+
+For alfresco 6.x family in Tomcat.
 
 

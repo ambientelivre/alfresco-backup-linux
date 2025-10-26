@@ -7,8 +7,8 @@
 # Create by marcio@ambientelivre.com.br marcos@ambientelivre.com.br
 
 # Configs of Script
-DESTDIR="/opt/backup"      	                         # backup destination directory
-DATE_NOW=$(date +%d-%m-%y)                           # default filename with date
+DESTDIR="/mnt/backup"      	                     # backup destination directory (monted)
+DATE_NOW=$(date +%d-%m-%y-%m-%S)                           # default filename with date
 INSTALL_ALFRESCO=/opt/alfresco                	     # directory where alfresco is installed 
 DIR_ALFDATA="${INSTALL_ALFRESCO}/data/alf-repo-data" # alfresco data directory (alf-data)
 DBENGINE=postgres				     # Examples: mariadb or postgres
